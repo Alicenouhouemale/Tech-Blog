@@ -1,0 +1,138 @@
+:root {
+    --primary:rgb(128, 0, 98);
+    --secondary: #b281dd;
+    --tertiary: #6a5e87;
+    --light-dark: #0c210c;
+    --dark: #38302e;
+    --border-radius: 0.3rem;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--tertiary);
+  }
+  
+  a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  header {
+    padding: 50px;
+    background: var(--primary);
+    color: var(--light-dark);
+    justify-content: space;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  aside {
+    flex: 0;
+    background-color: var(--tertiary);
+    padding: 80px;
+    text-align: left;
+    color: var(--light-dark);
+  }
+  
+  nav {
+    display: flex;
+    background-color: var(--secondary);
+  }
+  
+  nav a {
+    color: var(--light-dark);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    color: var(--secondary);
+    background-color: var(--dark);
+  }
+  
+  .gallery {
+    flex: 4;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    transition: color 0.1s;
+    margin-left: 20px;
+  }
+  
+  /* .shadowbox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; */
+    /* how to make it smaller */
+  /* } */
+  
+  /* CARDS */
+  .card {
+    margin: 20px;
+    flex: 0 1 300px;
+    border: 7px double var(--dark);
+    border-radius: 10px;
+    background-color: var(--light-dark);
+    color: var(--dark);
+  }
+  
+  .login-card {
+    text-align: center;
+    margin: 20px 20px 50px 20px;
+    padding: 5px;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+    border-style: double;
+    border-width: thick;
+    background-color: var(--primary);
+    color: var(--light-dark);
+  }
+  
+  .card header {
+    color: var(--light-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: var(--primary);
+    padding: 0.625rem;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  }
+  
+  .card-body {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* LAYOUT */
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
+  }
